@@ -121,4 +121,4 @@ class BST:
             node.right = self._deleteSubtree(node.right, rightMinNode.key)   # node의 오른쪽 부트리에서 최소키의 노드를 삭제        
             return node
 
-    
+# 높이를 O(logn)으로 유지해야 효율적으로 이진탐색트리를 이용할 수 있다.
