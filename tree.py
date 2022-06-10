@@ -93,3 +93,8 @@ class BinaryTree:
 # 배열표현법(2)는 2차원리스트를 이용한다.
 # 이진트리의 연결구조 표현법은 부모노드가 자식노드를 참조하도록 한다. 링크가 두개만 있으면 표현이 가능하다.
 # 레벨 순회의 경우 노드를 레벨 순으로 검사하는 순회방법이다. 큐를 사용해 구현하며 재귀를 사용하지 않는다.
+# 주어진 preorder 순서의 데이터 순열과 inorder 순서의 데이터 순열을 가지는 이진트리는 유일하다. Preorder 순서는 root를 결정하고, inorder 순서는 left subtree와 right subtree를 결정한다.
+# 주어진 postorder 순서의 데이터 순열과 inorder 순서의 데이터 순열을 가지는 이진트리는 유일하다. Postorder 순서는 root를 결정하고, inorder 순서는 left subtree와 right subtree를 결정한다.
+# 주어진 preorder 순서의 데이터 순열과 postorder 순서의 데이터 순열을 가지는 이진트리는 항상 유일한 것은 아니다.
+
+
