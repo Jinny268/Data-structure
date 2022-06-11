@@ -13,3 +13,31 @@
  - 각 노드는 color field (color), parent field (p), left child (left), right child (right)를 가진다.
  - 노드 x의 field f의 접근: x->f
  - 노드 x의 black height: x로부터 leaf까지 black 노드 수 (단, x는 제외)
+ 
+4. Red-black 트리의 원소 삽입 코드
+rbInsert(x)   // red-black tree insertion
+  treeInsert(x);   // x는 삽입되는 노드
+  x->color = RED;
+  // Move violation of #3 up tree, maintaining #4 as invariant:
+  while (x!=root && x->p->color == RED)   // color는 노드의 색임
+      if (x->p == x->p->p->left)   // p는 parent를 나타내고 left는 left child를,
+          y = x->p->p->right   // right는 right child를 나타낸다
+          // 26~30줄까지 Case1
+          if (y->color == RED)
+              x->p->color = BLACK
+              y->color = BLACK
+              x->p->p->color = RED
+              x = x->p->p
+          // 32~35줄까지 Case2
+          else   // y->color == BLACK
+              if (x == x->p->right)
+                  x = x->p
+                  leftRotate(x)
+          // 37~39줄까지 Case3
+              x->p->color = BLACK
+              x->p->p->color = RED
+              rightRotate(x->p->p)
+          // 이후 Case4~Case6
+      else   // x->p == x->p->p->right
+      (same as above, but with
+       “right” & “left” exchanged)
