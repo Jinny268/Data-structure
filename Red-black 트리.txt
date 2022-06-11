@@ -41,3 +41,8 @@ rbInsert(x)   // red-black tree insertion
       else   // x->p == x->p->p->right
       (same as above, but with
        “right” & “left” exchanged)
+       
+5. Red-black 트리의 수행 시간
+ (1) 원소 검색: O(logn)
+ (2) 원소 삽입: O(logn)
+ (3) 원소 삭제: O(logn)
