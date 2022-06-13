@@ -1,7 +1,7 @@
 <배타적 집합>
 
 1. 집합의 처리
-(1) Mutually disjoint sets( 상호 배타적 집합들)을 대상
+(1) Mutually disjoint sets(상호 배타적 집합들)을 대상
    - 교집합이 공집합
 (2) 연산
    - Make-Set(x): 원소 x로만 이루어진 집합을 만든다.
