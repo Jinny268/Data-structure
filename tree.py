@@ -96,5 +96,5 @@ class BinaryTree:
 # 주어진 preorder 순서의 데이터 순열과 inorder 순서의 데이터 순열을 가지는 이진트리는 유일하다. Preorder 순서는 root를 결정하고, inorder 순서는 left subtree와 right subtree를 결정한다.
 # 주어진 postorder 순서의 데이터 순열과 inorder 순서의 데이터 순열을 가지는 이진트리는 유일하다. Postorder 순서는 root를 결정하고, inorder 순서는 left subtree와 right subtree를 결정한다.
 # 주어진 preorder 순서의 데이터 순열과 postorder 순서의 데이터 순열을 가지는 이진트리는 항상 유일한 것은 아니다.
-
+# 수식트리의 결과값의 계산은 후위순회를 이용한다.
 
