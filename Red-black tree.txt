@@ -37,7 +37,7 @@ rbInsert(x)   // red-black tree insertion
               x->p->color = BLACK
               x->p->p->color = RED
               rightRotate(x->p->p)
-          // 이후 Case4~Case6
+  // 이후 Case4~Case6
       else   // x->p == x->p->p->right
       (same as above, but with
        “right” & “left” exchanged)
