@@ -21,19 +21,19 @@ rbInsert(x)   // red-black tree insertion
   // Move violation of #3 up tree, maintaining #4 as invariant:
   while (x!=root && x->p->color == RED)   // color는 노드의 색임
       if (x->p == x->p->p->left)   // p는 parent를 나타내고 left는 left child를,
-          y = x->p->p->right   // right는 right child를 나타낸다
+          y = x->p->p->right   // right는 right child를 나타낸다.
   // 26~30줄까지 Case1
           if (y->color == RED)
               x->p->color = BLACK
               y->color = BLACK
               x->p->p->color = RED
               x = x->p->p
-          // 32~35줄까지 Case2
+  // 32~35줄까지 Case2
           else   // y->color == BLACK
               if (x == x->p->right)
                   x = x->p
                   leftRotate(x)
-          // 37~39줄까지 Case3
+  // 37~39줄까지 Case3
               x->p->color = BLACK
               x->p->p->color = RED
               rightRotate(x->p->p)
