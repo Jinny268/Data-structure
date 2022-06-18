@@ -19,7 +19,7 @@ else:
 location.back = newNode
 
 <노드 삭제>
-if (location.back == None):   # 첫번째 노드 삭게
+if (location.back == None):   # 첫번째 노드 삭제
     head = location.next;
     if (location.next != None):   # 첫번째 노드가 마지막 노드가 아닌 경우
         location.next.back = None
